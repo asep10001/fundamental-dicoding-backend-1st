@@ -16,8 +16,8 @@ class SongsService {
     duration,
   }) {
     const id = `song-${nanoid(16)}`;
-    const createdAt = new Date().toDateString();
-    const updatedAt = createdAt;
+    const insertedAt = new Date().toDateString();
+    const updatedAt = insertedAt;
 
     const newSong = {
       id,
@@ -26,7 +26,7 @@ class SongsService {
       performer,
       genre,
       duration,
-      createdAt,
+      insertedAt,
       updatedAt,
     };
 
